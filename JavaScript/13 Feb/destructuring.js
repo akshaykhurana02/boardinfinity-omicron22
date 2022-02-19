@@ -36,12 +36,12 @@ function calculate(a, b) {
   return [add, subtract, multiply, divide];
 }
 
-const [add, subtract, multiply, divide] = calculate(4, 7);
+const [a1, a2, a3, a4] = calculate(4, 7);
 
-// console.log(add); // 11
-// console.log(subtract); // -3
-// console.log(multiply); // 28
-// console.log(divide); // 0.5714285714285714
+console.log(a1); // 11
+console.log(a2); // -3
+console.log(a3); // 28
+console.log(a4); // 0.5714285714285714
 
 
 // Example 2

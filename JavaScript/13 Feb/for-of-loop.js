@@ -7,10 +7,20 @@ for (let x of cars) {
   text += x;
 }
 
+/*
+
+1st Occurence: BMW
+2nd Occurence: BMWVolvo
+3rd Occurence: BMWVolvoMini
+
+Result -> BMWVolvoMini
+
+*/
+
 console.log(text);
 
 
-const numberArray = [1, 2, 3, "Akshay" , 4, 5, 6, 7, "Akshay"];
+const numberArray = [1, 2, 3 , 4, 5, 6, 7," ","Akshay"];
 
 let sumofArray = 0;
 
@@ -22,7 +32,7 @@ for(let y of numberArray) {
     sumofArray += y;
 }
 
-console.log("Sum of given Array : ", sumofArray); // Sum of given Array: 28Akshay
+// console.log("Sum of given Array : ", sumofArray); // Sum of given Array: 28Akshay
 
 
 
@@ -41,5 +51,14 @@ for (let x of numberArray) {
     }
 }
 
-console.log("Sum of odd numbers : ", sumOfOddNumbers);
-console.log("Sum of even numbers : ", sumOfEvenNumbers);
+// console.log("Sum of odd numbers : ", sumOfOddNumbers);
+// console.log("Sum of even numbers : ", sumOfEvenNumbers);
+
+let counter = 2;
+console.log(counter);
+let newCounter = counter++; // First Assign, Then Increment (Post Order)
+console.log("New Counter : ", newCounter); // 2
+console.log("Counter : ", counter); // 3
+let otherCounter = ++counter; // First Increment, Then Assign (Pre Order)
+console.log("Other Counter : ", otherCounter); // 4
+console.log("Counter : ", counter); // 4

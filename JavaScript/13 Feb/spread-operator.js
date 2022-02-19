@@ -5,8 +5,8 @@
 const firstArray = ["Akshay", "Ankit", "Akhil"];
 const secondArray = [7, 8, 9, "Manisha", 11, 12, 13, 14];
 
-const thirdArray = firstArray.concat(secondArray); // Using Concat Method
-//const thirdArray = [...firstArray, ...secondArray]; // Using Spread Operator
+let thirdArray = firstArray.concat(secondArray); // Using Concat Method
+thirdArray = ["Akshay Khurana", ...firstArray, ...secondArray]; // Using Spread Operator
 
 console.log(thirdArray);
 
@@ -38,4 +38,17 @@ const updateMyVehicle = {
 }
   
 const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle};
+//const myUpdatedVehicle = {...updateMyVehicle, ...myVehicle};
 console.log(myUpdatedVehicle);
+
+/*
+
+{
+    "brand": "Ford",
+    "model": "Mustang",
+    "color": "yellow",
+    "type": "car",
+    "year": 2021
+}
+
+*/
