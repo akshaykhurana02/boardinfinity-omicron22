@@ -18,7 +18,7 @@
     Given an array of N elements.find the number of occurences of each character and 
     print it in the decreasing order of occurences, if 2 or more number occurs the same 
     number of times, print the numbers in decreasing order.
-    Input Size : |N| <= 100000
+    Input Size : |N| <= 100000
     Sample Testcase :
         INPUT
         5
