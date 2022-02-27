@@ -7,9 +7,6 @@
     P Tag
     IMG Tag
     Table Tag
-    Anchor Tag
-    
-    DIV
-    
+    Anchor Tag    
 
 */
