@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        p {
+            padding: 15px;
+            border-width: 3px;
+            background-color: mediumaquamarine;
+        }
+
+        /* Four values */
+        p.four {
+            border-style: dotted solid double dashed;
+        }
+
+        /* Three values */
+        p.three {
+            border-style: dotted solid double;
+            /* Top - Dotted, Right & Left - Solid, Bottom - Double */
+        }
+
+        /* Two values */
+        p.two {
+            border-style: dotted solid;
+            /* Top, Bottom - Dotted, Right & Left - Solid */
+        }
+
+        /* One value */
+        p.one {
+            border-style: dotted;
+        }
+
+        p.normal {
+            border: 2px solid red;
+            padding: 15px;
+        }
+
+        p.round1 {
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        p.round2 {
+            border: 2px solid red;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        p.round3 {
+            border: 2px solid red;
+            border-radius: 12px;
+            padding: 15px;
+        }
+
+        p.round4 {
+            border: 2px solid red;
+            border-radius: 20px;
+            padding: 15px;
+        }
+
+        p.round5 {
+            border: 2px solid red;
+            border-radius: 40px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Individual Border Sides</h2>
+    <p class="four">4 different border styles.</p>
+    <p class="three">3 different border styles.</p>
+    <p class="two">2 different border styles.</p>
+    <p class="one">1 border style.</p>
+
+    <h2>The border-radius Property</h2>
+    <p>This property is used to add rounded borders to an element:</p>
+
+    <p class="normal">Normal border</p>
+    <p class="round1">Round border</p>
+    <p class="round2">Rounder border</p>
+    <p class="round3">Roundest border</p>
+    <p class="round4">Roundest border</p>
+    <p class="round5">Roundest border</p>
+
+</body>
+
+</html>
