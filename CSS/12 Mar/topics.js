@@ -8,7 +8,4 @@
     CSS Tables
     Combinators
 
-    Position in CSS
-    Psuedo Classes
-
 */
