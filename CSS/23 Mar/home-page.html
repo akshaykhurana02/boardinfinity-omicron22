@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: peachpuff;
+            color: white;
+        }
+
+        h1 {
+            color: royalblue;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: peachpuff;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: palevioletred;
+        }
+
+        iframe {
+            border: 0;
+            height: 80%;
+            width: 90%;
+        }
+    </style>
+    <title>Home | Welcome</title>
+</head>
+
+<body>
+    <h1>Board Infinity</h1>
+    <br />
+    <ul>
+        <li><a class="active" href="./first-page.html" target="home-page-iframe">CSS</a></li>
+        <li><a href="./second-page.html" target="home-page-iframe">Bootstrap</a></li>
+        <li><a href="./third-page.html" target="home-page-iframe">CSS Grid</a></li>
+    </ul>
+    <br />
+    <center>
+        <iframe src="./first-page.html" name="home-page-iframe" scrolling="no">
+        </iframe>
+    </center>
+</body>
+
+</html>
