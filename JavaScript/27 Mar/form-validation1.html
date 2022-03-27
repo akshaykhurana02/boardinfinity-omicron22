@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    table, tr, td {
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .disabled {
+      display: none;
+    }
+
+    .redParagraph {
+      color: red;
+    }
+
+    .borderRed {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>JavaScript Form Validation</h2>
+
+  <form method="post">
+    <table>
+      <tr>
+        <td>Enter First Number</td>
+        <td><input type="text" id="firstNumber" name="firstNumber"></td>
+      </tr>
+      <tr>
+        <td>Enter Second Number</td>
+        <td><input type="text" id="secondNumber" name="secondNumber" required></td>
+      </tr>
+      <tr id="resultRow" class="disabled">
+        <td>Result</td>
+        <td><input id="result"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="button" onclick="additionFunction()" value="Additon"></td>
+      </tr>
+    </table>
+
+    <br />
+
+    <p id="errorMessage" class="redParagraph disabled">* Please Enter Correct Values</p>
+
+  </form>
+
+  <script>
+
+    let givenString = "";
+    let firstNumberElement = document.getElementById("firstNumber");
+    let secondNumberElement = document.getElementById("secondNumber");
+    let resultRow = document.getElementById("resultRow");
+    let errorMessage = document.getElementById("errorMessage");
+
+    function additionFunction() {
+
+      let firstNumber = parseInt(document.getElementById("firstNumber").value);
+      let secondNumber = parseInt(document.getElementById("secondNumber").value);
+
+      firstNumberElement.classList.remove("borderRed");
+      secondNumberElement.classList.remove("borderRed");
+
+      if (firstNumber) {
+        firstNumberElement.classList.remove("borderRed");
+      } else {
+        firstNumberElement.classList.add("borderRed");
+      }
+
+      if (secondNumber) {
+        secondNumberElement.classList.remove("borderRed");
+      } else {
+        secondNumberElement.classList.add("borderRed");
+      }
+
+      let sum = firstNumber + secondNumber;
+      document.getElementById("result").value = sum;
+
+      if (firstNumber && secondNumber) {
+        resultRow.classList.remove("disabled");
+        errorMessage.classList.add("disabled");
+      } else {
+        resultRow.classList.add("disabled");
+        errorMessage.classList.remove("disabled");
+      }
+
+    }
+
+  </script>
+
+</body>
+
+</html>
