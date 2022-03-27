@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .redButton {
+            border: 2px solid red;
+        }
+
+        .greenButton {
+            border: 2px solid green !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>On Screen Keyboard</h2>
+
+    <button class="redButton" id="capsButton" type="button" onclick="capsLockFunction()">Caps Lock</button>
+
+    <br />
+    <br />
+    <button type="button" onclick="stringFunction('A')">A</button>
+    <button type="button" onclick="stringFunction('B')">B</button>
+    <button type="button" onclick="stringFunction('C')">C</button>
+    <button type="button" onclick="stringFunction('D')">D</button>
+
+    <br />
+    <br />
+
+    Given String : <span id="demo1"></span>
+
+    <script>
+        let givenString = "";
+        let capsLockValue = 0;
+
+        function capsLockFunction() {
+            if (capsLockValue == 0) {
+                capsLockValue = 1;
+            } else {
+                capsLockValue = 0;
+            }
+
+            // Logic to add & remove greenButton class
+        }
+
+        function stringFunction(givenCharacter) {
+            if (capsLockValue) {
+                givenString += givenCharacter;
+            } else {
+                givenString += givenCharacter.toLowerCase();
+            }
+
+            document.getElementById("demo1").innerHTML = givenString;
+        }
+    </script>
+
+</body>
+
+</html>
