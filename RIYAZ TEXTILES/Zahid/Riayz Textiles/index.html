@@ -1,0 +1,1330 @@
+<!doctype html>
+<html>
+<head>
+<title>Shopping</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<!-- CDN Link  -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- css path  -->
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- CDN Link  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- JS Path  -->
+	<!-- <script type="text/javascript" src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+	<!--navigation bar-->
+	<section class="cls-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		  <div class="container-fluid">
+        <a class="navbar-brand me-5 ms-3" href="index.html">Riyaz Textiles</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		        <li class="nav-item ms-5 me-2">
+		        	<span class="glyphicon glyphicon-home"></span>
+		          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+		        </li>
+		       
+		        <li class="nav-item ms-5 me-2 dropdown">
+		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Categories
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+		            <li><a class="dropdown-item" href="#women">Women</a></li>
+		            <li><a class="dropdown-item" href="#men">Men</a></li>
+		            <li><a class="dropdown-item" href="#kids">Kids</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item ms-5 me-2">
+		          <a class="nav-link" href="about.html">About</a>
+		        </li>
+		        <li class="nav-item ms-5 me-2">
+		        	<span class="glyphicon glyphicon-phone"></span>
+		          <a class="nav-link" href="contact.html">Contact</a>
+		        </li>
+		        <li class="nav-item ms-5 me-2">
+		        	<span class="glyphicon glyphicon-user"></span>
+		          <a class="nav-link" href="sign.html">Sign Up</a>
+		        </li>
+		      </ul>
+		     
+		    </div>
+		  </div>
+		</nav>
+	</section>
+
+
+	<section class="cls-carousel">
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="img/3.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/2.jpg" class="d-block w-100" alt="...">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="img/1.jpg" class="d-block w-100" alt="...">
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	</section>
+
+
+	<section class = "container">
+		<div class="row">
+			<div class="col-md-4" >
+				<div class="img-thumbnail">
+					<a href="#men">
+						<img class="img-responsive" src="img/men.jpg">
+						<div class="btn btn-success mt-1 d-grid">Men</div>
+					</a>
+				</div>
+			</div>
+	    <div class="col-md-4" >
+				<div class="img-thumbnail">
+	        <a href="#women">
+						<img class="img-responsive" src="img/women.jpg">
+	          <div class="btn btn-primary mt-1 d-grid">Women</div>
+	        </a>
+	      </div>
+		  </div>
+	    <div class="col-md-4"> 
+	    	<div class="img-thumbnail">
+	        <a href="#kids">
+						<img class="img-responsive" src="img/kids.jpg">
+	          <div class="btn btn-warning mt-1 d-grid">Kids</div>
+	        </a>
+	      </div>
+		  </div>
+	  </div>
+	</section>
+
+
+	<!--Men section-->
+	<section id="men" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="row">
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/boys1.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>499</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,299</strike> (61% off)</h6>
+									ICC Cricket World Cup<br>
+									Sports Men Polo Neck Blue T-Shirt
+							</p>
+					    <a href="#boy1" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/boys2.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>549</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,849</strike> (70% off)</h6>
+									Men's Casual Shirt<br>
+									Dennis lingo
+							</p>
+					    <a href="#boy2" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>			
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/boys3.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>649</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,299</strike> (50% off)</h6>
+									Pepe Jeans<br>
+									Men's Regular Fit T-Shirt
+							</p>
+					    <a href="#boy3" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/boys4.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>1199</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,999</strike> (40% off)</h6>
+									Levis<br>
+									Men's RegularT-Shirt
+							</p>
+					    <a href="#boy4" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/boys5.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>1199</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,199</strike> (40% off)</h6>
+									Levis<br>
+									Men's RegularT-Shirt
+							</p>
+					    <a href="#boy5" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>			
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/boys6.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>806</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>2,399</strike> (66% off)</h6>
+									Ojass<br>
+									Men's Solid Regular Jacket
+							</p>
+					    <a href="#boy6" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--women section-->
+
+	<section id="women" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="row">
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/girl1.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>535</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,495</strike> (64% off)</h6>
+									Jevi Prints Poly Crepe Geometric Print<br>Salwar Suit Material(Unstitched)
+							</p>
+					    <a href="#girl1" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/girl2.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>486</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>2,200</strike> (77% off)</h6>
+									Gifts friends Poly Crepe Printed <br>Salwar Suit Material(Unstitched)
+							</p>
+					    <a href="#girl2" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>			
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/girl3.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>597</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>2,999</strike> (80% off)</h6>
+									EthnicJunction Poly Chanderi Embroidered<br> Salwar Suit Material(Unstitched)
+							</p>
+					    <a href="#girl3" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/girl4.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>519</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>2,995</strike> (82% off)</h6>
+									Jevi Prints Cotton Blend Printed <br> Kurta Fabric (Unstitched)
+							</p>
+					    <a href="#girl4" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/girl5.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>531</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,599</strike> (66% off)</h6>
+									Active Art Silk Printed Gown/Anarkali <br>Kurta & Bottom Material(Semi Stitched)
+							</p>
+					    <a href="#girl5" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>			
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/girl6.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>499</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,663</strike> (69% off)</h6>
+										Saara Poly Crepe Printed, Floral Print <br>Salwar Suit Material (Unstitched)
+							</p>
+					    <a href="#girl6" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--kids section-->
+	<section id="kids" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="row">
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/kid1.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>399</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>999</strike> (60% off)</h6>
+									SBN Girls Midi/Knee Length <br>Party Dress(Red, Sleeveless)
+							</p>
+					    <a href="#kid1" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/kid2.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>700</h5>
+					    <p class="card-text">
+								<h6>M.R.P:<strike><span class="fa fa-inr"></span>999</strike> (40% off)</h6>
+									SBN Girls <br>Party Dress(Red, Sleeveless)
+							</p>
+					    <a href="#kid2" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>			
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/kid3.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>999</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>2,220</strike> (55% off)</h6>
+									Net Comfortable <br> frog
+							</p>
+					    <a href="#kid3" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/kid4.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>433</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,399</strike> (69% off)</h6>
+										Boys Kids Casual
+							</p>
+					    <a href="#kid4" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/kid5.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>599</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>899</strike> (33% off)</h6>
+									Boys Party wear<br>
+									T-shirt and pant dress set
+							</p>
+					    <a href="#kid5" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>			
+
+				<div class="col-md-4" >
+					<div class="card" style="width: 18rem;">
+					  <img src="img/kid6.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title"><span class="fa fa-inr"></span>599</h5>
+					    <p class="card-text">
+									<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,999</strike> (70% off)</h6>
+									JBN Creations Boy's
+							</p>
+					    <a href="#kid6" class="btn btn-primary d-grid">View Item</a>
+					  </div>
+					 </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--men description-->
+	<section id="boy1" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/boys1.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#men">Mens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Sports Men Polo Neck Blue T-Shirt</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Sports Men Polo Neck Blue T-Shirt</h3>
+		        	<p class="card-text">
+		        			<h4 price="499" product="T-Shirt" class="card-title"><span class="fa fa-inr"></span>499</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,299</strike> (61% off)</h6>
+										ICC Cricket World Cup<br>
+										Sports Men Polo Neck Blue T-Shirt
+							</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Care Instructions: Hand Wash</li>
+						 				<li> Fit Type: Regular Fit</li>
+						 				<li> Fabric - Polyester</li>
+					     			<li>Fabric Care - Machine Wash/ Hand Wash</li>
+						 				<li>team india jersey 2019</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(1)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="boy2" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/boys2.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#men">Mens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Men's Casual Shirt</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Men's Casual Shirt</h3>
+		        	<p class="card-text">
+		        			<h4 price="549" product="Mens Casual Shirt" class="card-title"><span class="fa fa-inr"></span>549</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,849</strike> (70% off)</h6>
+										Men's Casual Shirt<br>
+										Dennis lingo
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Care Instructions: machine wash</li>
+				 						<li> Fit Type: slim fit</li>
+				 						<li>Color: Sky Blue</li>
+			     					<li>100%Cotton</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(2)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="boy3" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/boys3.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#men">Mens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Pepe Jeans</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Pepe Jeans</h3>
+		        	<p class="card-text">
+		        			<h4 price="649" product="Pepe Jeans" class="card-title"><span class="fa fa-inr"></span>649</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,299</strike> (50% off)</h6>
+										Pepe Jeans<br>
+										Men's Regular Fit T-Shirt
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Fit Type: Slim Fit</li>
+										<li>Neck:Round neck</li>
+				 						<li>Sleeve:Half Sleeve</li>
+			     					<li>Pattern:Printed</li>
+			     					<li>Ocassion:Casual,Wash care:Cold water wash only</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(3)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="boy4" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/boys4.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#men">Mens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Levis</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Levis</h3>
+		        	<p class="card-text">
+		        			<h4 price="1199" product="Levis" class="card-title"><span class="fa fa-inr"></span>1199</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,999</strike> (40% off)</h6>
+										Levis<br>
+										Men's RegularT-Shirt
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Fit Type: Slim Fit</li>
+						        <li>Neck:Round neck</li>
+				 						<li>Sleeve:Half Sleeve</li>
+			     					<li>Pattern:Printed</li>
+			     					<li>Ocassion:Casual,Wash care:Cold water wash only</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(4)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="boy5" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/boys5.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#men">Mens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Levis</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Levis</h3>
+		        	<p class="card-text">
+		        			<h4 price="1199" product="Levis" class="card-title"><span class="fa fa-inr"></span>1199</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,999</strike> (40% off)</h6>
+										Levis<br>
+										Men's RegularT-Shirt
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Fit Type: Slim Fit</li>
+				 						<li>Striped Tshirts</li>
+				 						<li>Fabric-Cotton</li>
+			     					<li>Printed Tshirts</li>
+			     					<li>Round Neck,Halfsleeves</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(5)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="boy6" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/boys6.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#men">Mens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Ojass</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Ojass</h3>
+		        	<p class="card-text">
+		        			<h4 price="806" product="Ojass" class="card-title"><span class="fa fa-inr"></span>806</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>2,399</strike> (66% off)</h6>
+										Ojass<br>
+										Men's Solid Regular Jacket
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li> Colour: Black</li>
+				 						<li> Material: Polyester</li>
+				 						<li> Full Sleeves Jacket</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(6)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+
+	<!--women description-->
+	<section id="girl1" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/girl1.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#women">Womens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Salwar</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Salwar</h3>
+		        	<p class="card-text">
+		        			<h4 price="535" product="Salwar" class="card-title"><span class="fa fa-inr"></span>535</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,495</strike> (64% off)</h6>
+										Jevi Prints Poly Crepe Geometric Print<br>Salwar Suit Material(Unstitched)
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li> Top Fabric-Pc Cotton|| Bottom Fabric-Pc Cotton|| Dupatta Fabric-Chiffon</li>
+										<li>Length -Top: 2 Meters, Bottom: 2.25 Meters, Dupatta: 2.10 Meters Size: Free Size</li>
+				 						<li>Type- Salwar Suit Material Unstitched </li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(7)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="girl2" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/girl2.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#women">Womens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Salwar</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Salwar</h3>
+		        	<p class="card-text">
+		        			<h4 price="486" product="Salwar" class="card-title"><span class="fa fa-inr"></span>486</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>2,200</strike> (77% off)</h6>
+									Gifts friends Poly Crepe Printed <br>Salwar Suit Material(Unstitched)
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li> Top Fabric-Pc Cotton|| Bottom Fabric-Pc Cotton|| Dupatta Fabric-Chiffon</li>
+				 						<li>Length -Top: 2 Meters, Bottom: 2.25 Meters, Dupatta: 2.10 Meters Size: Free Size</li>
+				 						<li>Type- Salwar Suit Material Unstitched </li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(8)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="girl3" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/girl3.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#women">Womens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Salwar</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Salwar</h3>
+		        	<p class="card-text">
+		        			<h4 price="597" product="Salwar" class="card-title"><span class="fa fa-inr"></span>597</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>2,999</strike> (80% off)</h6>
+										EthnicJunction Poly Chanderi Embroidered<br> Salwar Suit Material(Unstitched)
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li> Top Fabric-Pc Cotton|| Bottom Fabric-Pc Cotton|| Dupatta Fabric-Chiffon</li>
+				 						<li>Length -Top: 2 Meters, Bottom: 2.25 Meters, Dupatta: 2.10 Meters Size: Free Size</li>
+				 						<li>Type- Salwar Suit Material Unstitched </li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(9)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="girl4" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/girl4.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#women">Womens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Kurta Fabric</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Kurta Fabric</h3>
+		        	<p class="card-text">
+		        			<h4 price="519" product="Kurta Fabric" class="card-title"><span class="fa fa-inr"></span>519</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>2,995</strike> (82% off)</h6>
+										Jevi Prints Cotton Blend Printed <br> Kurta Fabric (Unstitched)
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li> Material: Polyester Crepe with three quarter sleeve and round neck</li>
+				 						<li>Light or Pastel color Kurta Material can be Semi Transparent as it is polyester material.</li>
+				 						<li>Do not bleach </li>
+				 						<li>Fitting Type: Regular fit </li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(10)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="girl5" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/girl5.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#women">Womens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Kurta</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Kurta</h3>
+		        	<p class="card-text">
+		        			<h4 price="531" product="Kurta" class="card-title"><span class="fa fa-inr"></span>531</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,599</strike> (66% off)</h6>
+										Active Art Silk Printed Gown/Anarkali <br>Kurta & Bottom Material(Semi Stitched)
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Care Instructions: Gentle Wash</li>
+				 						<li>Fabric : High Quality Georgette Top With Thread Embroidery,Stone And Lace Work,High Quality Nazneen Dupatta With Thread Embroidery.</li>
+				 						<li>Size : Maximum Chest (Bust) Size Up To 46 Inch Length Of The Top From Shoulder Is 62 Inch.</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(11)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="girl6" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/girl6.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#women">Womens Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Salwar Suit</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Salwar Suit</h3>
+		        	<p class="card-text">
+		        			<h4 price="499" product="Salwar Suit" class="card-title"><span class="fa fa-inr"></span>499</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,663</strike> (69% off)</h6>
+										Saara Poly Crepe Printed, Floral Print <br>Salwar Suit Material (Unstitched)
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li> Top Fabric-Pc Cotton|| Bottom Fabric-Pc Cotton|| Dupatta Fabric-Chiffon</li>
+				 						<li>Length -Top: 2 Meters, Bottom: 2.25 Meters, Dupatta: 2.10 Meters Size: Free Size</li>
+				 						<li>Type- Salwar Suit Material Unstitched </li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(12)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+
+	<!--kids description-->
+	<section id="kid1" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/kid1.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#kid3">Kids Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Frog</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Kids Frog</h3>
+		        	<p class="card-text">
+		        			<h4 price="399" product="Party Frog" class="card-title"><span class="fa fa-inr"></span>399</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>999</strike> (60% off)</h6>
+										SBN Girls Midi/Knee Length <br>Party Dress(Red, Sleeveless)
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Care Instructions: Hand Wash</li>
+						 				<li> Fit Type: Regular Fit</li>
+						 				<li> Fabric - Polyester</li>
+					     			<li>Fabric Care - Machine Wash/ Hand Wash</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(13)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="kid2" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/kid2.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#kids">Kids Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Party Dress</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Party Dress</h3>
+		        	<p class="card-text">
+		        			<h4 price="700" product="Party Dress" class="card-title"><span class="fa fa-inr"></span>700</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>999</strike> (40% off)</h6>
+										SBN Girls <br>Party Dress(Red, Sleeveless)
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Care Instructions: Hand Wash</li>
+						 				<li> Fit Type: Regular Fit</li>
+						 				<li> Fabric - Polyester</li>
+					     			<li>Fabric Care - Machine Wash/ Hand Wash</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(14)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="kid3" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/kid3.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#kids">Kids Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Frog</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Party Frog</h3>
+		        	<p class="card-text">
+		        			<h4 price="700" product="Frog" class="card-title"><span class="fa fa-inr"></span>700</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>999</strike> (40% off)</h6>
+										Net Comfortable <br> frog
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Care Instructions: Hand Wash</li>
+						 				<li> Fit Type: Regular Fit</li>
+						 				<li> Fabric - Polyester</li>
+					     			<li>Fabric Care - Machine Wash/ Hand Wash</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(15)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="kid4" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/kid4.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#kids">Kids Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Kids Casual</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Kids Casual</h3>
+		        	<p class="card-text">
+		        			<h4 price="433" product="Kids Casual" class="card-title"><span class="fa fa-inr"></span>433</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,399</strike> (69% off)</h6>
+										Boys Kids Casual
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Care Instructions: Hand Wash</li>
+						 				<li> Fit Type: Regular Fit</li>
+						 				<li> Fabric - Polyester</li>
+					     			<li>Fabric Care - Machine Wash/ Hand Wash</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(16)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="kid5" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/kid5.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#kids">Kids Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Party Wear</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Party Wear</h3>
+		        	<p class="card-text">
+		        			<h4 price="599" product="Party Wear" class="card-title"><span class="fa fa-inr"></span>599</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>899</strike> (33% off)</h6>
+										Boys Party wear<br>
+										T-shirt and pant dress set
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Care Instructions: Hand Wash</li>
+						 				<li> Fit Type: Regular Fit</li>
+						 				<li> Fabric - Polyester</li>
+					     			<li>Fabric Care - Machine Wash/ Hand Wash</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(17)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+	<section id="kid6" class="section-padding" >
+		<div class="container" style="margin-top:5px;">
+			<div class="card mb-3" style="max-width: 100%;">
+		  	<div class="row g-0">
+		    	<div class="col-md-4">
+		      	<img src="img/kid6.jpg"  class="img-fluid rounded-start" alt="...">
+		    	</div>
+		    	<div class="col-md-8">
+		      	<div class="card-body">
+		      		<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+						    	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						    	<li class="breadcrumb-item"><a href="#kids">Kids Clothing</a></li>
+						    	<li class="breadcrumb-item active" aria-current="page">Night Dress</li>
+						  	</ol>
+							</nav>
+		        	<h3 class="card-title">Night Dress</h3>
+		        	<p class="card-text">
+		        			<h4 price="599" product="Kids Night Pants" class="card-title"><span class="fa fa-inr"></span>599</h4>
+		        			<h6>M.R.P:<strike><span class="fa fa-inr"></span>1,999</strike> (70% off)</h6>
+											JBN Creations Boy's
+									</p>
+		        	<p class="card-text">
+		        		<small class="text-muted">
+		        			<ul>
+		        				<li>Care Instructions: Hand Wash</li>
+						 				<li> Fit Type: Regular Fit</li>
+						 				<li> Fabric - Polyester</li>
+					     			<li>Fabric Care - Machine Wash/ Hand Wash</li>
+					 				</ul>
+		        		</small>
+		        		<div>
+		        			<a href="#cart">
+										<input class="btn btn-warning btn-lg" type="button" value="Add To Cart" onclick="cart(18)"/>
+									</a>
+								</div>
+		        	</p>
+		      	</div>
+		    	</div>
+		  	</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--cart section-->
+	<section id="cart">
+		<div class="container">
+			<div>
+				<h2>Cart Details</h2>
+			</div>
+		  <div class="jumbotron">
+		  <div>
+			<table class="table">
+		  	<thead class="thead">
+		    	<tr>
+		      	<th scope="col">SNo</th>
+		      	<th scope="col">Product</th>
+		      	<th scope="col">Price</th>
+		    	</tr>
+		  	</thead>
+		  	<tbody id="tablebody">
+		  	</tbody>
+			  <tbody>
+			  	<tr>
+			      <th scope="row"></th>
+			      <td style="text-align:right;font-size:30px;">          <b> Total Amount  </td>
+			      <td id="total" style="font-size:30px;"> 0 </td>
+			    </tr>
+			  </tbody> 
+			</table>
+			<p align="right">
+				<a href=#>
+					<input class="btn btn-primary btn-lg" type="button" value="Continue Shopping"/>
+				</a>
+				<a href="#buy">
+					<input class="btn btn-primary btn-lg" type="button" value="Buy Now" />
+				</a>
+			</p>
+		</div>
+	</section>
+
+	<section id="buy">
+		<div class="container">
+			<div class="my-form">
+				<h3>Enter the Details<h3>
+			</div>
+			  <form action="" method="post" role="form" class="contactForm">
+            <div class="mb-3">
+              <label for="buyname" class="form-label">Name</label>
+              <input type="text" class="form-control" id="buyname" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="buyemail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="buyemail" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="buymb" class="form-label">Mobile Number</label>
+              <input type="text" class="form-control" id="buymb" placeholder="+91-998967050">
+            </div>
+            <div class="mb-3">
+              <label for="buyda" class="form-label">Delivery Address</label>
+              <input type="text" class="form-control" id="buyda" placeholder="Text address.,watergam-193303">
+            </div>
+            
+            <div class="form-action">
+              <button class="btn btn-light" type="submit" onclick="shop()" class="btn btn-form">Submit</button>
+              <button type="submit" class="btn btn-light" formaction="index.html" class="btn btn-form">Continue Shopping</button>
+            </div>
+        </form>
+	  </div>
+	</section>
+
+
+
+<script type="text/javascript">   
+	var count=0;   
+	var total=0;
+	carthide(count);
+		 function cart(no){
+		 count++;
+						var num=parseInt(no);
+						num=num-1;
+						var n=document.getElementsByTagName("h4");
+						var price=n[num].getAttribute("price");
+						console.log(price);
+						var product=document.getElementsByTagName("h4");
+		                var name=product[num].getAttribute("product");
+						console.log(name);
+						var oldHTML = document.getElementById('tablebody').innerHTML;
+						var mycode=oldHTML;
+						mycode+='<tr>';
+						mycode+='<th scope="row">';
+						mycode+=count;
+						mycode+='</th>';
+						mycode+='<td>';
+						mycode+=name;
+						mycode+='</td>';
+						mycode+='<td>';
+						mycode+=price;
+						mycode+='</td>';
+						mycode+='</tr>';
+						document.getElementById("tablebody").innerHTML=mycode;
+						total+=(+price);
+						t=total;
+						document.getElementById("total").innerHTML=total;
+						document.getElementById("fig").innerHTML=count;
+						carthide(count);
+						}	
+	function shop()
+	{
+	alert("Thank you for your order!!!   Your Total Amount is Rs. "+t+"  you product will be delivered within two days..");
+	var buyname = document.getElementById('buyname');
+	var buyemail = document.getElementById('buyemail');
+	var buymb = document.getElementById('buymb');
+	var buyda = document.getElementById('buyda');
+	var buyna = document.getElementById('buyna');
+	sessionStorage.setItem('buyname',buyname.value);
+	sessionStorage.setItem('buyemail',buyemail.value);
+	sessionStorage.setItem('buymb',buymb.value);
+	sessionStorage.setItem('buyda',buyda.value);
+	sessionStorage.setItem('buyna',buyna.value);
+
+	}
+					
+		    
+</script>
+
+
+<div class="container-fluid cls-footer">
+  <div class="panel panel-default" >
+    <div class="panel-footer text-center ">Copyright ©2022 All rights reserved</div>
+  </div>
+</div>
+
+</body>
+</html>

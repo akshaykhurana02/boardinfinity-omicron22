@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Shopping</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <!-- CDN Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- css path  -->
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- CDN Link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- JS Path  -->
+    <!-- <script type="text/javascript" src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--navigation bar-->
+    <section class="cls-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-5 ms-3" href="index.html">Riyaz Textiles</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ms-5 me-2">
+                <span class="glyphicon glyphicon-home"></span>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+             
+              <li class="nav-item ms-5 me-2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="index.html#women">Women</a></li>
+                  <li><a class="dropdown-item" href="index.html#men">Men</a></li>
+                  <li><a class="dropdown-item" href="index.html#kids">Kids</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ms-5 me-2">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item ms-5 me-2">
+                <span class="glyphicon glyphicon-phone"></span>
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item ms-5 me-2">
+                <span class="glyphicon glyphicon-user"></span>
+                <a class="nav-link" href="sign.html">Sign Up</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    </section>
+    <div class="container well">
+        <main class="my-form" style="margin-top:30px;">
+            <div class="cotainer">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-title" style="margin-left:60px;"><h2>Register</h2></div>
+                                <hr>
+                                <div class="card-text">
+                                    <form name="my-form">
+                                        <div class="form-group row">
+                                            <label for="full_name" class="col-md-4 col-form-label text-md-right" style="margin-left:60px;">Full Name</label>
+                                            <div class="col-md-6">
+                                                <input type="text" id="full_name" class="form-control" name="full-name" placeholder="Name">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="email_address" class="col-md-4 col-form-label text-md-right" style="margin-left:60px;">E-Mail Address</label>
+                                            <div class="col-md-6">
+                                                <input type="text" id="email_address" class="form-control" name="email-address" placeholder="Email id">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="user_name" class="col-md-4 col-form-label text-md-right" style="margin-left:60px;">User Name</label>
+                                            <div class="col-md-6">
+                                                <input type="text" id="user_name" class="form-control" name="username" placeholder="User Name">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group row">
+                                            <label for="pass_word" class="col-md-4 col-form-label text-md-right" style="margin-left:60px;">Password</label>
+                                            <div class="col-md-6">
+                                                <input type="password" id="pwd" class="form-control"  placeholder="Password">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="phone_number" class="col-md-4 col-form-label text-md-right" style="margin-left:60px;">Phone Number</label>
+                                            <div class="col-md-6">
+                                                <input type="text" id="phone_number" class="form-control"placeholder="Phone Number">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="present_address" class="col-md-4 col-form-label text-md-right" style="margin-left:60px;">Present Address</label>
+                                            <div class="col-md-6">
+                                                <input type="text" id="present_address" class="form-control" placeholder="present address">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="permanent_address" class="col-md-4 col-form-label text-md-right" style="margin-left:60px;">Permanent Address</label>
+                                            <div class="col-md-6">
+                                                <input type="text" id="permanent_address" class="form-control" placeholder="permanent address" name="permanent-address">
+                                            </div>
+                                        </div>
+
+                                            <div class="col-md-6 offset-md-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <input class="btn btn-success" id="rgstr_btn" type="submit" value="Register" onClick="store()"/>                                        
+                                                <input class="btn btn-success"  formaction="#login" type="submit" value="Login" onclick="check()"/>                                     
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="login" class="container well">
+        <main class="my-form" style="margin-top:30px;">
+            <div class="cotainer">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-title" style="margin-left:60px;"><h2>Login</h2></div>
+                                <hr>
+                                <div class="card-text">
+                                    <form name="my-form">
+                                        <div class="form-group row">
+                                            <label for="user_name" class="col-md-4 col-form-label text-md-right" style="margin-left:60px;">User Name</label>
+                                            <div class="col-md-6">
+                                                <input type="text" id="user_name" class="form-control" name="username" placeholder="User Name">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group row">
+                                            <label for="pass_word" class="col-md-4 col-form-label text-md-right" style="margin-left:60px;">Password</label>
+                                            <div class="col-md-6">
+                                                <input type="password" id="pwd" class="form-control"  placeholder="Password">
+                                            </div>
+                                        </div>
+
+                                            <div class="col-md-6 offset-md-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <input class="btn btn-success"  type="submit" formaction="index.html" value="Login" onclick="check()"/>                                     
+                                            </div>
+                                             
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
