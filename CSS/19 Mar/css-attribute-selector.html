@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    [title~=flower] {
+      border: 5px solid black;
+    }
+
+    [class$="test"] {
+      background: yellow;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>CSS [attribute~="value"] Selector</h2>
+  <p>All images with the title attribute containing the word "flower" get a yellow border.</p>
+
+  <img src="klematis.jpg" title="klematis flower" width="150" height="113">
+  <img src="img_flwr.gif" title="flower" width="224" height="162">
+  <img src="img_tree.gif" title="tree flower" width="200" height="358">
+
+
+  <div class="first_test">The first div element.</div>
+  <div class="second">The second div element.</div>
+  <div class="my-test">The third div element.</div>
+  <p class="mytest">This is some text in a paragraph.</p>
+
+</body>
+
+</html>

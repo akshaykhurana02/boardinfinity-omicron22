@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .mask1 {
+            -webkit-mask-image: url(./images/instagram2.png);
+            mask-image: url(./images/instagram2.png);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The mask-image Property</h1>
+
+    <h3>An image with a mask layer image:</h3>
+    <svg width="600" height="400">
+        <mask id="svgmask3">
+          <circle fill="#ffffff" cx="75" cy="75" r="75"></circle>
+          <circle fill="#ffffff" cx="80" cy="260" r="75"></circle>
+          <circle fill="#ffffff" cx="270" cy="160" r="75"></circle>
+        </mask>
+        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/pizza.jpeg" mask="url(#svgmask3)"></image>
+      </svg>
+
+    <h3>Original image:</h3>
+    <img src="./images/pizza.jpeg" alt="Pizza" width="600" height="400">
+
+</body>
+
+</html>

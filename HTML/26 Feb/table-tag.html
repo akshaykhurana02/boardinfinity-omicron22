@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title>Learning Tables</title>
+    <style>
+        table {
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>Example 1</caption>
+        <tr>
+            <!-- Table Row -->
+            <th>Roll Number</th> <!-- Table Heading -->
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>1</td> <!-- Table Data -->
+            <td>Akshay</td>
+            <td>Khurana</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Rishabh</td>
+            <td>Rishabh</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Noorul</td>
+            <td>Noorul</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ankit</td>
+            <td>Ankit</td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <!-- Colspan -->
+
+    <table>
+        <caption>Example 2 (Colspan)</caption>
+        <tr>
+            <th>Roll Number</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td colspan="2" style="background-color: orange;">Rishabh Agarwal</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Noorul</td>
+            <td>Noorul</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ankit</td>
+            <td>Ankit</td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <!-- Rowspan -->
+
+    <table>
+        <caption>Example 3 (Rowspan)</caption>
+        <tr>
+            <th>Roll Number</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td rowspan="2" style="background-color: orange;">Rishabh</td>
+            <td>ABC</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>DEF</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ankit</td>
+            <td>Ankit</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
