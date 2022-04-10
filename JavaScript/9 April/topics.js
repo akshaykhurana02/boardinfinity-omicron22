@@ -8,6 +8,8 @@
     JS Events
     for loops
     Arrow Function
+    Anonymous Function
+    CSS Media Query
 
 
     Responsive Web Design
