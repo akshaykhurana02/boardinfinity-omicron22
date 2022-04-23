@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .loggedin-user {
+            display: flex;
+            justify-content: flex-end;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="demo" class="loggedin-user"></p>
+    <script>
+
+        let text;
+        let person = prompt("Please enter your name:", "Harry Potter");
+        if (person == null || person == "") {
+            text = "User cancelled the prompt.";
+        } else {
+            text = "Hello " + person + "!";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>
