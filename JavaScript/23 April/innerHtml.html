@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>The Document Object</h1>
+    <h2>innerHtml Property </h2>
+
+    <p id="para1">Hello</p>
+    
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+            let currentValue = document.getElementById("para1").innerHTML;
+            document.getElementById("para1").innerHTML = `${currentValue}! We are learning JS.`;
+        }
+    </script>
+
+</body>
+
+</html>
