@@ -1,0 +1,19 @@
+.comment-container{
+    margin: 2.5rem;    
+}
+
+.commenter-name {
+    color: blue;
+    font-size: 16px;
+}
+
+.comment-time {
+    color: grey;
+    font-size: 8px;
+}
+
+.comment-text {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 1rem;
+}
