@@ -17,6 +17,7 @@ class App extends React.Component {
   }
 
   // This is the only mandatory lifecycle method
+  
   render() { // This is the main method, which is used to display content on the DOM
     console.log("render");
     return (
