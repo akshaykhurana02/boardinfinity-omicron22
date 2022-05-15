@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchBar from './SearchBar';
+import ImageList from './ImageList';
 
 class App extends React.Component {
 
@@ -18,6 +19,7 @@ class App extends React.Component {
         return (
             <div className='ui container' style={{ marginTop: '15px' }}>
                 <SearchBar onTextSubmit={this.onSearchSubmit} /> {/* Callback */}
+                <ImageList />
             </div>
         );
     }
