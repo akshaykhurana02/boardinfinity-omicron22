@@ -5,7 +5,7 @@ function Component3() {
     return (
         <div>
             <CommentComponent 
-                author="Akshay"
+                author="Akshay" // propName = propValue
                 commentTime="6:30PM"
                 comment="Wow!"
             />
@@ -29,6 +29,8 @@ function Component3() {
                 commentTime="7:00AM"
                 comment="Wow ABC!"
             />
+            <CommentComponent />
+            <CommentComponent />
         </div>
     );
 }
