@@ -5,7 +5,7 @@ import ColorContext from "../contexts/ColorContext";
 class Button extends React.Component {
   renderSubmit(value) {
     if (value === "english") {
-      return "Submit";
+      return "Submit"; // Here Submit is JSX Content
     } else if (this.context === "hindi") {
       return "Prastut";
     } else if (this.context === "hindi pk") {
