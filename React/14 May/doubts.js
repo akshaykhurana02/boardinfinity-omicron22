@@ -1,0 +1,6 @@
+/*
+
+    Local Storage vs Session Storage vs Cookies    
+    setInterval vs setTimeout
+
+*/

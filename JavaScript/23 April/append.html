@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>The Document Object</h1>
+    <h2>The appendChild() Method</h2>
+
+    <p>Create a p element with some text:</p>
+
+    <script>
+
+        let langs = ['TypeScript', 'HTML', 'CSS', 'JavaScript', 'PHP'];
+
+        let nodes = langs.map((lang) => {
+            let li = document.createElement('li');
+            li.textContent = lang;
+            return li;
+        });
+
+        console.log(nodes); // This will print an array of nodes
+
+        document.body.append(...nodes);
+
+    </script>
+
+</body>
+
+</html>

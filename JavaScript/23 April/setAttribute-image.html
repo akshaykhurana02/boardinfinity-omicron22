@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .image-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The Element Object</h1>
+    <h2>The setAttribute() Method</h2>
+
+    <div class="image-section">
+        <img id="main-image" src="./images/pizza.jpeg" height="300" width="300" />
+    </div>
+
+    <div class="image-section">
+        <img src="./images/pizza.jpeg" width="50" height="50" onclick="myFunction('./images/pizza.jpeg')" />
+        <img src="./images/burger.jpeg" width="50" height="50" onclick="myFunction('./images/burger.jpeg')" />
+        <img src="./images/spring-roll.jpeg" width="50" height="50" onclick="myFunction('./images/spring-roll.jpeg')" />
+        <img src="./images/pizza.jpeg" width="50" height="50" onclick="myFunction('./images/pizza.jpeg')" />
+        <img src="./images/burger.jpeg" width="50" height="50" onclick="myFunction('./images/burger.jpeg')" />
+        <img src="./images/spring-roll.jpeg" width="50" height="50" onclick="myFunction('./images/spring-roll.jpeg')" />
+        <img src="./images/pizza.jpeg" width="50" height="50" onclick="myFunction('./images/pizza.jpeg')" />
+        <img src="./images/burger.jpeg" width="50" height="50" onclick="myFunction('./images/burger.jpeg')" />
+        <img src="./images/spring-roll.jpeg" width="50" height="50" onclick="myFunction('./images/spring-roll.jpeg')" />
+    </div>
+
+    <script>
+        function myFunction(imageLocation) {
+            document.getElementById("main-image").setAttribute("src", imageLocation);
+        }
+    </script>
+
+</body>
+
+</html>

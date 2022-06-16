@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: stretch;
+            background-color: #f1f1f1;
+        }
+
+        .flex-container>img {
+            background-color: DodgerBlue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        .flex-container>img:hover {
+            flex-shrink: 0;
+            /* This will nullify align-items: stretch */
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The flex-shrink Property</h1>
+
+    <p>Do not let the third flex item shrink as much as the other flex items:</p>
+
+    <div class="flex-container">
+        <div><img src="./images/pizza.jpeg"></div>
+        <div><img src="./images/burger.jpeg"></div>
+        <div><img src="./images/spring-roll.jpeg"></div>
+        <div><img src="./images/pizza.jpeg"></div>
+        <div><img src="./images/burger.jpeg"></div>
+        <div><img src="./images/spring-roll.jpeg"></div>
+        <div><img src="./images/pizza.jpeg"></div>
+        <div><img src="./images/burger.jpeg"></div>
+        <div><img src="./images/spring-roll.jpeg"></div>
+        <div><img src="./images/pizza.jpeg"></div>
+        <div><img src="./images/burger.jpeg"></div>
+        <div><img src="./images/spring-roll.jpeg"></div>
+        <div><img src="./images/pizza.jpeg"></div>
+        <div><img src="./images/burger.jpeg"></div>
+        <div><img src="./images/spring-roll.jpeg"></div>
+        <div><img src="./images/pizza.jpeg"></div>
+        <div><img src="./images/burger.jpeg"></div>
+        <div><img src="./images/spring-roll.jpeg"></div>
+    </div>
+
+</body>
+
+</html>

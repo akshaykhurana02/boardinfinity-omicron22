@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>The Document Object</h1>
+    <h2>The appendChild() Method</h2>
+
+    <p>Create a p element with some text:</p>
+
+    <ol>
+        <script>
+            const listItem1 = document.createElement("li");
+            const listItem2 = document.createElement("li");
+            const listItem3 = document.createElement("li");
+
+            listItem1.innerHTML = "First Element";
+            listItem2.innerHTML = "Second Element";
+            listItem3.innerHTML = "Third Element";
+
+            document.body.appendChild(listItem1);
+            document.body.appendChild(listItem2);
+            document.body.appendChild(listItem3);
+
+        </script>
+    </ol>
+
+
+</body>
+
+</html>

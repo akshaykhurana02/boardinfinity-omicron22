@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .redParagraph {
+            color: red;
+        }
+    </style>    
+</head>
+<body>
+    <h1>The Document Object</h1>
+    
+    <h2>The createElement() Method</h2>
+
+    <p>Create a p element with some text:</p>
+
+    <script>
+
+        // Create element:
+        const para = document.createElement("p");        
+        para.innerHTML = "Akshay";
+        para.innerText = "This is a paragraph.";
+        para.classList.add('redParagraph');
+
+        // Append to body:
+        document.body.appendChild(para);
+        
+    </script>
+
+</body>
+
+</html>

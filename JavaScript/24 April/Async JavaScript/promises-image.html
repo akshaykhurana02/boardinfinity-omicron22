@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .image-section {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body onload="myFunction()">
+    <div>
+        <h2>Promises Example</h2>
+
+        <div class="image-section">
+            <img src="./images/burger.jpeg" id="myImage" height="300" width="450">
+        </div>
+
+        
+        <script>
+            async function myFunction() {
+                try {
+                    const imageResponse = await fetch('https://abc.photos/id/237/200/300');
+                    document.getElementById("myImage").setAttribute("src", imageResponse.url);
+                } catch (e) {
+                    console.log(e);
+                    document.getElementById("myImage").setAttribute("src", './images/error-image.webp');
+                }
+
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>
