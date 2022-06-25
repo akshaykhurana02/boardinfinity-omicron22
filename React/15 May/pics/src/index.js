@@ -4,7 +4,7 @@ import App from './components/App';
 //import UncontrolledComponent from './controlled-uncontrolled/UncontrolledComponent';
 //import ControlledComponent from './controlled-uncontrolled/ControlledComponent';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.querySelector('div'));
 
 root.render(
   <React.StrictMode>
