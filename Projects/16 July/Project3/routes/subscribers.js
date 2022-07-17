@@ -7,7 +7,7 @@ const Subscriber = require("../models/subscriber"); // Importing
 // Read All
 router.get("/", async (req, res) => {
   try {
-    const subscribers = await Subscriber.find();
+    const subscribers = await Subscriber.find(); // It will return all the documents within the collection
     res.json(subscribers);
   } catch (err) {
     res.status(500).json({ message: err.message });
@@ -52,7 +52,7 @@ router.patch("/:id", getSubscriber, async (req, res) => {
 // Delete
 router.delete("/:id", getSubscriber, async (req, res) => {
   try {
-    await res.subscriber.remove();
+    await res.subscriber.remove(); // Interally converts to deleteOne({})
     res.json({ message: "Deleted Subscriber" });
   } catch (err) {
     res.status(500).json({ message: err.message });
